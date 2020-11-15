@@ -112,72 +112,6 @@
             }
         }
         
-    } 
-    .hotspot{
-        width: 100%;
-        height: 3.8rem;
-        display: flex;
-        align-items: stretch;
-        justify-content: flex-start;
-        .leftlimtedtime{
-            //background-color: #C54473;
-            flex-basis: 50%;
-            h2{
-                margin: .15rem 0 .1rem 0;
-                .timer{
-                    width: .3rem;
-                    height: .3rem;
-                }
-                span{
-                    font: bold .3rem/1 "微软雅黑";
-                    color:@color12;
-                    text-shadow: 0 0 0.05rem @color10;
-                    padding-left: .15rem;
-                    letter-spacing: .1em;
-                }
-            }
-            .flag{
-                font: .24rem/.3rem "微软雅黑";
-                color: @color13;
-                text-shadow: 0 0 0.02rem @color10;
-                letter-spacing: .01rem;
-                padding-bottom:.06rem;
-            }
-            .countdown{
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                .count{
-                    width: 1.65rem ;
-                    height: .45rem;
-                    margin-right: .27rem;
-                }
-                .spike{
-                    display: inline-block;
-                    width: .96rem;
-                    height: .4rem;
-                    background: url(../images/index/bg.jpg) no-repeat;
-                    font: bold .25rem/.4rem "微软雅黑";
-                    text-align: center;
-                    letter-spacing: 0.02rem;
-                }
-            }
-            .towel{ 
-                width: 100%;
-                margin-top:.24rem;
-                display: flex;
-                justify-content: center;
-                img{
-                    width: 2.9rem;
-                    height: 2.1rem;
-            }
-        }
-            
-        }
-        .rightnewbrand{
-            background-color: chartreuse;
-            flex-basis: 50%;
-        }
     }
 }
 
@@ -197,7 +131,171 @@
     height: .3rem;
     background-color: @color7;
     border-top:1px solid @color8;
-    border-bottom:1px solid @color8;
+}
+.hotspot{
+    width: 100%;
+    height: 3.8rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    .leftlimtedtime{
+        //background-color: #C54473;
+        flex-basis: 50%;
+        height: 100%;
+        border: 1px solid @color8;
+        border-left-style: none;
+        h2{
+            margin: .15rem 0 .1rem .2rem;
+            .timer{
+                width: .3rem;
+                height: .3rem;
+            }
+            span{
+                font: bold .3rem/1 "微软雅黑";
+                color:@color12;
+                text-shadow: 0 0 0.05rem @color10;
+                padding-left: .15rem;
+                letter-spacing: .1em;
+            }
+        }
+        .flag{
+            font: .21rem/.3rem "微软雅黑";
+            color: @color13;
+            text-shadow: 0 0 0.02rem @color10;
+            letter-spacing: .01rem;
+            padding-bottom:.06rem;
+            margin-left: 0.2rem;
+        }
+        .countdown{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .count{
+                width: 1.65rem ;
+                height: .45rem;
+                margin:0 .27rem 0 .2rem;
+            }
+            .spike{
+                display: inline-block;
+                width: .96rem;
+                height: .4rem;
+                background: url(../images/index/bg.jpg) no-repeat;
+                font: bold .25rem/.4rem "微软雅黑";
+                text-align: center;
+                letter-spacing: 0.02rem;
+            }
+        }
+        .towel{ 
+            width: 100%;
+            margin-top:.24rem;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 2.9rem;
+                height: 2.1rem;
+        }
+        }
+        
+    }
+    .rightnewbrand{
+        //background-color: chartreuse;
+        flex-basis: 50%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid @color8;
+        border-bottom: 1px solid @color8;
+        .newbrand{
+            width: 50%;
+            height: 50%;
+            overflow: hidden;
+            h2{
+                margin: .15rem 0 .1rem .2rem;
+                display: flex;
+                //justify-content: flex-start;
+                align-items: center;
+                span{
+                    font: bold .3rem/1 "微软雅黑";
+                    color:@color12;
+                    text-shadow: 0 0 0.05rem @color10;
+                    letter-spacing: .1em;
+                }
+                .discount{
+                    display: inline-block;
+                    width: .28rem;
+                    height:.23rem;
+                    //background-color: #FC2A61;
+                    background-image: linear-gradient(to right, #ff115f 0%, #fd3799 50%);
+                    color:#f5f5f7;
+                    font:.2rem/.23rem "微软雅黑";
+                    text-align: center;
+                    margin-left: .05rem;
+                }
+            }
+            .flag{
+                font: .21rem/.3rem "微软雅黑";
+                color: @color13;
+                text-shadow: 0 0 0.02rem @color10;
+                letter-spacing: .01rem;
+                padding-bottom:.06rem;
+                margin-left: 0.2rem;
+            }
+            .brand{
+                width:.93rem;
+                height: .32rem;
+                margin: .2rem 0 0 .2rem;
+            } 
+        }  
+        .newbrandimg{
+            width: 50%;
+            height: 50%;
+            text-align: center;
+            overflow: hidden;
+            img{
+                width: 1.28rem;
+                height: 1.78rem;
+                line-height: 1.78rem;
+                margin-top: .05rem;
+            }
+        }
+        .teneveryday,.fight{
+            width: 49.8%;
+            height: 50%;
+            position: relative;
+            border-top:1px solid @color8;
+            h2{
+                margin: .15rem 0 .1rem .2rem;
+                font: bold .3rem/1 "微软雅黑";
+                color:@color12;
+                text-shadow: 0 0 0.05rem @color10;
+                letter-spacing: .1em;
+            }
+            .flag{
+                font: .21rem/.3rem "微软雅黑";
+                color: @color13;
+                text-shadow: 0 0 0.02rem @color10;
+                letter-spacing: .01rem;
+                padding-bottom:.06rem;
+                margin-left: 0.2rem;
+            }
+            img{
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+            }
+            .coat{
+                width: .7rem;
+                height: 0.9rem;
+            }
+            .roll{
+                width: 1.1rem;
+                height: 0.9rem;
+            }
+        }
+        .fight{
+            border-left: 1px solid @color8;
+        }
+    }
 }
 .tabnav{
     width: 100%;
