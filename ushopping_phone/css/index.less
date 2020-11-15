@@ -3,6 +3,7 @@
 @color2:#C9C9C9;
 @color3:#494949;
 @color4:#C54473;
+@color5:#c3c3c3;
 .wrap{
     width: 7.1rem;
     max-width: 7.5rem;
@@ -33,7 +34,7 @@
     }
     nav{
         width: 100%;
-        height: .78rem;
+        height: .75rem;
         
         .list{
             width: 100%;
@@ -43,30 +44,41 @@
             overflow-x: scroll;
             overflow-y: hidden;
             display: flex;
-            // align-items: center;
+            align-items: center;
+            justify-content: space-between;
             box-sizing: border-box;
             padding-left: .15rem;
+            position: relative;
             li{
                 flex-grow: 1;
-                
-                margin-right: .4rem;
-                // line-height: .78rem;
+                margin-right: .42rem;
                 a{
                     display: inline-block;
-                    font-size: .25rem;
+                    font: .25rem/.71rem "微软雅黑";
                     color:@color3;
-                    line-height: .74rem;
-                    // border:1px solid red;
                     &:hover{
                         color:@color4;
                         border-bottom: 4px solid @color4;
                     }
                 }
             }
+            .downarrow{
+                display: block;
+                width: .75rem;
+                height: .75rem;
+                line-height: .75rem;
+                position: absolute;
+                background-color: #ffffff;
+                top: 0;
+                right: 0;
+                font-size: .4rem;
+                text-align: center;
+                color:@color5;
+            }
            
         }
         .list::-webkit-scrollbar{
-            display: none;
+             display: none;
         }
     }
 }

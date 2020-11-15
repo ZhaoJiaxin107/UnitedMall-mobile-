@@ -27,7 +27,7 @@
 }
 .wrap nav {
   width: 100%;
-  height: 0.78rem;
+  height: 0.75rem;
 }
 .wrap nav .list {
   width: 100%;
@@ -36,22 +36,37 @@
   overflow-x: scroll;
   overflow-y: hidden;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   box-sizing: border-box;
   padding-left: 0.15rem;
+  position: relative;
 }
 .wrap nav .list li {
   flex-grow: 1;
-  margin-right: 0.4rem;
+  margin-right: 0.42rem;
 }
 .wrap nav .list li a {
   display: inline-block;
-  font-size: 0.25rem;
+  font: 0.25rem/0.71rem "微软雅黑";
   color: #494949;
-  line-height: 0.74rem;
 }
 .wrap nav .list li a:hover {
   color: #C54473;
   border-bottom: 4px solid #C54473;
+}
+.wrap nav .list .downarrow {
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  font-size: 0.4rem;
+  text-align: center;
+  color: #c3c3c3;
 }
 .wrap nav .list::-webkit-scrollbar {
   display: none;
