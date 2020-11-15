@@ -10,6 +10,9 @@
 @color9:#878787;
 @color10:#8a8a8a;
 @color11:#ef6b16;
+@color12:#ff3179;
+@color13:#999999;
+@color14:#ffffff;
 .wrap{
     //width: 7.1rem;
     width: calc(100% - 20px*2);
@@ -110,15 +113,75 @@
         }
         
     } 
+    .hotspot{
+        width: 100%;
+        height: 3.8rem;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        .leftlimtedtime{
+            //background-color: #C54473;
+            flex-basis: 50%;
+            h2{
+                margin: .15rem 0 .1rem 0;
+                span{
+                    font: bold .3rem/1 "微软雅黑";
+                    color:@color12;
+                    text-shadow: 0 0 0.05rem @color10;
+                    padding-left: .15rem;
+                    letter-spacing: .1em;
+                }
+            }
+            .flag{
+                font: .24rem/.3rem "微软雅黑";
+                color: @color13;
+                text-shadow: 0 0 0.02rem @color10;
+                letter-spacing: .01rem;
+                padding-bottom:.06rem;
+            }
+            .countdown{
+                border:1px solid #333;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .count{
+                    width: 1.65rem ;
+                    height: .45rem;
+                    margin-right: .27rem;
+                }
+                .spike{
+                    display: inline-block;
+                    width: .96rem;
+                    height: .4rem;
+                    background: url(../images/index/bg.jpg) no-repeat;
+                    font: bold .25rem/.4rem "微软雅黑";
+                    text-align: center;
+                    letter-spacing: 0.02rem;
+                }
+
+                  
+            }
+        }
+        .rightnewbrand{
+            background-color: chartreuse;
+            flex-basis: 50%;
+        }
+    }
 }
-.banner img{
-    width: 100%;
-    height:100%;
-    max-width: 750px;
+
+.banner {
     margin: 0 auto;
+    max-width: 750px;
+    img{
+        width: 100%;
+        height:100%;
+        max-width: 750px;
+    }
 }
 .graypadding{
     width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
     height: .3rem;
     background-color: @color7;
     border-top:1px solid @color8;
