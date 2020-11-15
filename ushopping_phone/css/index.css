@@ -107,7 +107,12 @@
   margin: 0 auto;
   height: 0.3rem;
   background-color: #f1f1f1;
+}
+.bt {
   border-top: 1px solid #ebebeb;
+}
+.bb {
+  border-bottom: 1px solid #ebebeb;
 }
 .hotspot {
   width: 100%;
@@ -234,7 +239,7 @@
 }
 .hotspot .rightnewbrand .teneveryday,
 .hotspot .rightnewbrand .fight {
-  width: 49.8%;
+  width: 49.6%;
   height: 50%;
   position: relative;
   border-top: 1px solid #ebebeb;
