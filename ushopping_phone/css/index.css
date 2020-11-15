@@ -119,6 +119,62 @@
 .wrap .cosmeticnav li:nth-last-of-type(-n+3) {
   border-left-style: none;
 }
+.wrap .cosmeticlist .cosmetic {
+  width: 100%;
+  height: 3rem;
+  box-shadow: 0 0 0.2rem #eeeeee;
+  border: 1px solid #ebebeb;
+  display: flex;
+  margin-bottom: 0.34rem;
+}
+.wrap .cosmeticlist .cosmetic .cosmeticimg {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wrap .cosmeticlist .cosmetic .cosmeticimg .first {
+  width: 2.16rem;
+  height: 2.2rem;
+}
+.wrap .cosmeticlist .cosmetic .cosmeticimg .second {
+  width: 2.18rem;
+  height: 2.98rem;
+}
+.wrap .cosmeticlist .cosmetic .cosmeticdesc {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrap .cosmeticlist .cosmetic .cosmeticdesc h3 {
+  font: 0.3rem/1 "微软雅黑";
+  color: #2e2e2e;
+  margin-top: 0.42rem;
+}
+.wrap .cosmeticlist .cosmetic .cosmeticdesc .price {
+  font-size: 0.28rem;
+  color: #db3c39;
+  margin-top: 0.2rem;
+}
+.wrap .cosmeticlist .cosmetic .cosmeticdesc .price b {
+  font-size: 0.21rem;
+}
+.wrap .cosmeticlist .cosmetic .cosmeticdesc .sell {
+  margin-top: 0.3rem;
+  font-size: 0.2rem;
+  color: #bebebe;
+}
+.wrap .cosmeticlist .cosmetic .cosmeticdesc button {
+  margin-top: 0.32rem;
+  width: 1.64rem;
+  height: 0.52rem;
+  border-radius: 0.05rem;
+  background-color: #f26b11;
+  color: #f1f1f1;
+  font-size: 0.23rem;
+}
 .banner {
   margin: 0 auto;
   max-width: 750px;

@@ -15,6 +15,10 @@
 @color14:#ffffff;
 @color15:#3c3c3c;
 @color16:#f26b11;
+@color17:#f7f7f7;
+@color18:#2e2e2e;
+@color19:#db3c39;
+@color20:#bebebe;
 .wrap{
     //width: 7.1rem;
     width: calc(100% - 20px*2);
@@ -143,6 +147,65 @@
         }
         li:nth-last-of-type(-n+3){
             border-left-style: none;
+        }
+    }
+    .cosmeticlist{
+        .cosmetic{
+            width: 100%;
+            height: 3rem;
+            box-shadow: 0 0 .2rem #eeeeee;
+            border: 1px solid @color8;
+            display: flex;
+            margin-bottom: .34rem;
+            .cosmeticimg{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .first{
+                    width: 2.16rem;
+                    height: 2.2rem;          
+                }
+                .second{
+                    width: 2.18rem;
+                    height: 2.98rem;
+                }
+               
+            }
+            .cosmeticdesc{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                h3{
+                    font: .3rem/1 "微软雅黑";
+                    color:@color18;
+                    margin-top:.42rem;
+                }
+                .price{
+                    font-size: .28rem;
+                    color:@color19;
+                    margin-top:.2rem;
+                    b{
+                        font-size: .21rem;
+                    }
+                }
+                .sell{
+                    margin-top:.3rem;
+                    font-size: .2rem;
+                    color:@color20;
+                }
+                button{
+                    margin-top:.32rem;
+                    width: 1.64rem;
+                    height: .52rem;
+                    border-radius: .05rem;
+                    background-color: @color16;
+                    color:@color7;
+                    font-size: .23rem;
+                }
+            }
         }
     }
 }
