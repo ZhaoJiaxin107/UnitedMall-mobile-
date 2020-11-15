@@ -92,6 +92,33 @@
   font: 0.3rem/1 "微软雅黑";
   color: #717171;
 }
+.wrap .cosmeticnav {
+  margin: 0.2rem 0;
+  width: 100%;
+  height: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .cosmeticnav li {
+  width: 25%;
+  height: 100%;
+  line-height: 0.7rem;
+  border: 1px solid #ebebeb;
+  text-align: center;
+}
+.wrap .cosmeticnav li:hover {
+  background-color: #f26b11;
+}
+.wrap .cosmeticnav li:hover a {
+  color: #ffffff;
+}
+.wrap .cosmeticnav li a {
+  color: #3c3c3c;
+  font: 0.3rem/1 "微软雅黑";
+}
+.wrap .cosmeticnav li:nth-last-of-type(-n+3) {
+  border-left-style: none;
+}
 .banner {
   margin: 0 auto;
   max-width: 750px;

@@ -13,6 +13,8 @@
 @color12:#ff3179;
 @color13:#999999;
 @color14:#ffffff;
+@color15:#3c3c3c;
+@color16:#f26b11;
 .wrap{
     //width: 7.1rem;
     width: calc(100% - 20px*2);
@@ -112,9 +114,37 @@
             }
         }
         
+    } 
+    .cosmeticnav{
+        margin: .2rem 0;
+        width: 100%;
+        height: .7rem;
+        //background-color: #C54473;
+        display: flex;
+        //align-items: center;
+        justify-content: space-between;
+        li{
+            width:25%;
+            height: 100%;
+            line-height: .7rem;
+            border:1px solid @color8;
+            text-align: center;
+            &:hover{
+                background-color: @color16;
+            }
+            &:hover a{
+                color:@color14;
+            }
+            
+            a{
+                color:@color15;
+                font: .3rem/1 "微软雅黑";
+            }
+        }
+        li:nth-last-of-type(-n+3){
+            border-left-style: none;
+        }
     }
-
-    
 }
 
 .banner {
@@ -139,7 +169,6 @@
 .bb{
     border-bottom:1px solid @color8;
 }
-
 .hotspot{
     width: 100%;
     height: 3.8rem;
@@ -201,9 +230,8 @@
             img{
                 width: 2.9rem;
                 height: 2.1rem;
-        }
-        }
-        
+            }
+        }     
     }
     .rightnewbrand{
         //background-color: chartreuse;
@@ -309,7 +337,6 @@
     width: 100%;
     max-width: 750px;
     height: 1.4rem;
-    //background-color: #C54473;
     border-top: 1px solid @color8;
     position: fixed;
     bottom: 0;
