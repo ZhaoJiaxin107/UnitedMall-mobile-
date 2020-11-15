@@ -1,4 +1,7 @@
 @charset "utf-8";
+body {
+  overflow-x: hidden;
+}
 .wrap {
   width: calc(100% - 20px*2);
   max-width: 750px;
@@ -102,7 +105,7 @@
 .wrap .cosmeticnav li {
   width: 25%;
   height: 100%;
-  line-height: 0.7rem;
+  line-height: 0.8rem;
   border: 1px solid #ebebeb;
   text-align: center;
 }
