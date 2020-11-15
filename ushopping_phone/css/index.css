@@ -44,7 +44,7 @@
 }
 .wrap nav .list li {
   flex-grow: 1;
-  margin-right: 0.42rem;
+  margin-right: 0.45rem;
 }
 .wrap nav .list li a {
   display: inline-block;
@@ -63,11 +63,15 @@
   position: absolute;
   background-color: #ffffff;
   top: 0;
-  right: 0;
+  right: -0.2rem;
   font-size: 0.4rem;
   text-align: center;
   color: #c3c3c3;
 }
 .wrap nav .list::-webkit-scrollbar {
   display: none;
+}
+.banner img {
+  width: 7.5rem;
+  height: 3rem;
 }
