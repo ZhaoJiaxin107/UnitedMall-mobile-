@@ -4,13 +4,19 @@
 @color3:#494949;
 @color4:#C54473;
 @color5:#c3c3c3;
+@color6:#717171;
+@color7:#f1f1f1;
+@color8:#ebebeb;
+@color9:#878787;
+@color10:#8a8a8a;
+@color11:#ef6b16;
 .wrap{
-    width: 7.1rem;
-    max-width: 7.5rem;
+    //width: 7.1rem;
+    width: calc(100% - 20px*2);
+    max-width: 750px;
     margin: 0 auto;
     header{
         height: 0.9rem;
-        background-color: aqua;
         // layout
         display: flex;
         // 主轴对齐方式
@@ -47,14 +53,14 @@
             align-items: center;
             justify-content: space-between;
             box-sizing: border-box;
-            padding-left: .15rem;
+            padding-left: .10rem;
             position: relative;
             li{
                 flex-grow: 1;
-                margin-right: .45rem;
+                margin-right: .4rem;
                 a{
                     display: inline-block;
-                    font: .25rem/.71rem "微软雅黑";
+                    font:bold .28rem/.71rem "微软雅黑";
                     color:@color3;
                     &:hover{
                         color:@color4;
@@ -81,8 +87,71 @@
              display: none;
         }
     }
+    .sectionnav{
+        width: 100%;
+        max-width: 7.5rem;
+        height: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        a{
+            display: inline-block;
+            text-align: center;
+            img{
+                display: block;
+                width: .7rem;
+                height: .7rem;
+                margin: .2rem;
+            }
+            em{
+                font: .3rem/1 "微软雅黑";
+                color:#717171;
+            }
+        }
+        
+    } 
 }
 .banner img{
-    width: 7.5rem;
-    height:3rem;
+    width: 100%;
+    height:100%;
+    max-width: 750px;
+    margin: 0 auto;
 }
+.graypadding{
+    width: 100%;
+    height: .3rem;
+    background-color: @color7;
+    border-top:1px solid @color8;
+    border-bottom:1px solid @color8;
+}
+.tabnav{
+    width: 100%;
+    max-width: 750px;
+    height: 1.4rem;
+    //background-color: #C54473;
+    border-top: 1px solid @color8;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a{
+        text-align: center;
+        i{
+            display: block;
+            font-size: .5rem;
+            color:@color10;
+        }
+        em{
+            font:.2rem/.32rem "微软雅黑";
+            color:@color9;
+        }
+        &:hover i,
+        &:hover em{
+            color:@color11;
+        }
+    }
+}
+

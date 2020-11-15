@@ -1,12 +1,11 @@
 @charset "utf-8";
 .wrap {
-  width: 7.1rem;
-  max-width: 7.5rem;
+  width: calc(100% - 20px*2);
+  max-width: 750px;
   margin: 0 auto;
 }
 .wrap header {
   height: 0.9rem;
-  background-color: aqua;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,16 +38,16 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  padding-left: 0.15rem;
+  padding-left: 0.1rem;
   position: relative;
 }
 .wrap nav .list li {
   flex-grow: 1;
-  margin-right: 0.45rem;
+  margin-right: 0.4rem;
 }
 .wrap nav .list li a {
   display: inline-block;
-  font: 0.25rem/0.71rem "微软雅黑";
+  font: bold 0.28rem/0.71rem "微软雅黑";
   color: #494949;
 }
 .wrap nav .list li a:hover {
@@ -71,7 +70,67 @@
 .wrap nav .list::-webkit-scrollbar {
   display: none;
 }
+.wrap .sectionnav {
+  width: 100%;
+  max-width: 7.5rem;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wrap .sectionnav a {
+  display: inline-block;
+  text-align: center;
+}
+.wrap .sectionnav a img {
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin: 0.2rem;
+}
+.wrap .sectionnav a em {
+  font: 0.3rem/1 "微软雅黑";
+  color: #717171;
+}
 .banner img {
-  width: 7.5rem;
-  height: 3rem;
+  width: 100%;
+  height: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.graypadding {
+  width: 100%;
+  height: 0.3rem;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.tabnav {
+  width: 100%;
+  max-width: 750px;
+  height: 1.4rem;
+  border-top: 1px solid #ebebeb;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.tabnav a {
+  text-align: center;
+}
+.tabnav a i {
+  display: block;
+  font-size: 0.5rem;
+  color: #8a8a8a;
+}
+.tabnav a em {
+  font: 0.2rem/0.32rem "微软雅黑";
+  color: #878787;
+}
+.tabnav a:hover i,
+.tabnav a:hover em {
+  color: #ef6b16;
 }
