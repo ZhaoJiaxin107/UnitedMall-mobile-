@@ -9,7 +9,7 @@
 }
 .wrap header {
   width: calc(100% - 30px*2);
-  height: 0.95rem;
+  height: 0.9rem;
   margin: 0 auto;
   display: flex;
   align-items: center;

@@ -1,0 +1,127 @@
+@charset "utf-8";
+.headerbg {
+  background-color: #f26b11;
+}
+.wrap {
+  max-width: 750px;
+  margin: 0 auto;
+  width: 100%;
+}
+.wrap header {
+  max-width: 750px;
+  width: calc(100% - 30px*2);
+  height: 0.9rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrap header a img {
+  width: 0.17rem;
+  height: 0.28rem;
+}
+.wrap header h3 {
+  font: 0.35rem/1 "微软雅黑";
+  color: #fefcff;
+}
+.wrap header i {
+  font-size: 0.55rem;
+  color: #fefcff;
+}
+.wrap .product {
+  width: calc(100% - 40px*2);
+  max-width: 750px;
+  height: 2.07rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrap .product .name {
+  font: 0.29rem/0.5rem "微软雅黑";
+  color: #323232;
+}
+.wrap .product .price {
+  font-size: 0.27rem;
+  color: #e3383e;
+}
+.wrap .product .price span {
+  font-size: 0.22rem;
+  color: #878787;
+}
+.wrap .purchase {
+  width: calc(100% - 23px*2);
+  max-width: 750px;
+  height: 4rem;
+  background-color: darkorange;
+  color: #323232;
+  font-size: 0.25rem;
+  margin: 0 auto;
+}
+.wrap .purchase .promotion {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f1f1;
+}
+.wrap .purchase .promotion p .discount {
+  font-size: 0.2rem;
+  color: #b12818;
+  padding: 0.08rem 0.1rem;
+  border: 1px solid #b12818;
+  border-radius: 0.04rem;
+  margin: 0 0.15rem;
+}
+.wrap .purchase .promotion i {
+  font-size: 0.26rem;
+  color: #b4b4b4;
+}
+.wrap .purchase .purchasenumber {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f1f1;
+}
+.wrap .purchase .purchasenumber .number i,
+.wrap .purchase .purchasenumber .number input {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.2rem;
+  text-align: center;
+  border: 1px solid #515151;
+  color: #323232;
+}
+.wrap .purchase .purchasenumber .number .minus {
+  border-radius: 0.06rem 0 0 0.06rem;
+}
+.wrap .purchase .purchasenumber .number input {
+  vertical-align: top;
+  margin-left: -0.08rem;
+  border-left-style: none;
+}
+.wrap .purchase .purchasenumber .number .plus {
+  margin-left: -0.08rem;
+  border-radius: 0 0.06rem 0.06rem 0;
+}
+.banner {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.banner img {
+  width: 7.5rem;
+  height: 7.48rem;
+}
+.paddingone {
+  width: 100%;
+  max-width: 750px;
+  height: 0.15rem;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
