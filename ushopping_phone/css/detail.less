@@ -108,14 +108,18 @@
             .number i,
             .number input{
                 display: inline-block;
-                width: .6rem;
                 height: .6rem;
                 line-height: .6rem;
                 font-size: .2rem;
                 text-align: center;
                 border: 1px solid @color10;
-                color:@color3;
-                
+                color:@color3;       
+            }
+            .number i{
+                width: .6rem;
+            }
+            .number input{
+                width: .8rem;
             }
             .number .minus{
                 border-radius: .06rem 0 0 .06rem;
@@ -128,6 +132,7 @@
             .number .plus{
                 margin-left: -.08rem;
                 border-radius: 0 0.06rem 0.06rem 0;
+                border-left-style: none;
             }
         }
 
@@ -151,7 +156,7 @@
             justify-content: flex-start;
             border-bottom: 1px solid @color9;
             h4{
-                font-size: .23rem;
+                font-size: .24rem;
                 color:@color11;
             }
             button{
@@ -160,6 +165,7 @@
                 font-size: .3rem;
                 color: @color13;
                 border-radius: .05rem;
+                border: none;
                 &:hover{
                     background-color: @color14;
                 }
@@ -170,10 +176,20 @@
             .five{
                 margin-left: .15rem;
             }
+        }     
+    }
+
+    .detailtitle{
+        width: calc(100% - 23px*2);
+        max-width: 750px;
+        margin: 0 auto;
+        height: 1rem; 
+        display: flex;
+        align-items: center;
+        h3{
+            font-size: .3rem;
+            color:@color3;
         }
-
-
-            
     }
 
 }
@@ -186,12 +202,26 @@
         height: 7.48rem;
     }
 }
-.paddingone{
+.paddingone, .paddingtwo{
     width: 100%;
     max-width: 750px;
-    height: .15rem;
     margin: 0 auto;
+}
+.paddingone{
+    height: .15rem;
     background-color: @color6;
+}
+.paddingtwo{
+    height: .21rem;
+    background-color: @color9;
+}
+.detailimg{
+    margin: 0 auto;
+    max-width: 750px;
+    img{
+        width: 7.5rem;
+        height: 23.78rem;
+    }
 }
 
 

@@ -89,13 +89,18 @@
 .wrap .purchase .purchasenumber .number i,
 .wrap .purchase .purchasenumber .number input {
   display: inline-block;
-  width: 0.6rem;
   height: 0.6rem;
   line-height: 0.6rem;
   font-size: 0.2rem;
   text-align: center;
   border: 1px solid #515151;
   color: #323232;
+}
+.wrap .purchase .purchasenumber .number i {
+  width: 0.6rem;
+}
+.wrap .purchase .purchasenumber .number input {
+  width: 0.8rem;
 }
 .wrap .purchase .purchasenumber .number .minus {
   border-radius: 0.06rem 0 0 0.06rem;
@@ -108,6 +113,7 @@
 .wrap .purchase .purchasenumber .number .plus {
   margin-left: -0.08rem;
   border-radius: 0 0.06rem 0.06rem 0;
+  border-left-style: none;
 }
 .wrap .purchase .property {
   width: 100%;
@@ -129,7 +135,7 @@
   border-bottom: 1px solid #f1f1f1;
 }
 .wrap .purchase .size h4 {
-  font-size: 0.23rem;
+  font-size: 0.24rem;
   color: #cbcbcb;
 }
 .wrap .purchase .size button {
@@ -138,6 +144,7 @@
   font-size: 0.3rem;
   color: #ffffff;
   border-radius: 0.05rem;
+  border: none;
 }
 .wrap .purchase .size button:hover {
   background-color: #e43a3d;
@@ -148,6 +155,18 @@
 .wrap .purchase .size .five {
   margin-left: 0.15rem;
 }
+.wrap .detailtitle {
+  width: calc(100% - 23px*2);
+  max-width: 750px;
+  margin: 0 auto;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+}
+.wrap .detailtitle h3 {
+  font-size: 0.3rem;
+  color: #323232;
+}
 .banner {
   max-width: 750px;
   margin: 0 auto;
@@ -156,10 +175,25 @@
   width: 7.5rem;
   height: 7.48rem;
 }
-.paddingone {
+.paddingone,
+.paddingtwo {
   width: 100%;
   max-width: 750px;
-  height: 0.15rem;
   margin: 0 auto;
+}
+.paddingone {
+  height: 0.15rem;
   background-color: #f0f0f0;
+}
+.paddingtwo {
+  height: 0.21rem;
+  background-color: #f1f1f1;
+}
+.detailimg {
+  margin: 0 auto;
+  max-width: 750px;
+}
+.detailimg img {
+  width: 7.5rem;
+  height: 23.78rem;
 }
