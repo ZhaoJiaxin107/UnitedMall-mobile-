@@ -1,0 +1,31 @@
+@charset "utf-8";
+@color1:#f26b11;
+@color2: #fefcff;
+.wrap{
+    //width: 6.9rem;
+    width: calc(100% - 30px*2);
+    max-width: 750px;
+    margin: 0 auto;
+    header{
+       width: 100%;
+       height: .95rem; 
+       background-color:@color1;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       a{
+           img{
+               width: .17rem;
+               height: .28rem;
+           }
+       }
+       h3{
+           font:.35rem/1 "微软雅黑";
+           color:@color2;
+       }
+       i{
+           font-size: .55rem;
+           color:@color2;
+       }
+    }
+}
