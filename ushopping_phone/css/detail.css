@@ -162,10 +162,54 @@
   height: 1rem;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #f1f1f1;
 }
 .wrap .detailtitle h3 {
   font-size: 0.3rem;
   color: #323232;
+}
+.wrap .commentcontent {
+  width: calc(100% - 23px*2);
+  max-width: 750px;
+  margin: 0 auto;
+  height: 3.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrap .commentcontent .user {
+  font-size: 0.2rem;
+  color: #666666;
+}
+.wrap .commentcontent .comment {
+  font-size: 0.25rem;
+  color: #323232;
+}
+.wrap .commentcontent .commentimg {
+  display: flex;
+  justify-content: flex-start;
+}
+.wrap .commentcontent .commentimg img {
+  width: 1.55rem;
+  height: 1.51rem;
+  margin-left: 0.1rem;
+}
+.wrap .commentcontent .time {
+  font-size: 0.22rem;
+  color: #9a9a9a;
+}
+.wrap .conclude {
+  width: calc(100% - 23px*2);
+  max-width: 750px;
+  margin: 0 auto;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #f1f1f1;
+}
+.wrap .conclude span {
+  font-size: 0.23rem;
+  color: #9a9a9a;
 }
 .banner {
   max-width: 750px;

@@ -13,6 +13,8 @@
 @color12: #e1e1e3;
 @color13: #ffffff;
 @color14: #e43a3d;
+@color15:#666666;
+@color16: #9a9a9a;
 .headerbg{
     background-color: @color1;
 }
@@ -186,11 +188,60 @@
         height: 1rem; 
         display: flex;
         align-items: center;
+        border-bottom: 1px solid @color9;
         h3{
             font-size: .3rem;
             color:@color3;
         }
     }
+
+    .commentcontent{
+        width: calc(100% - 23px*2);
+        max-width: 750px;
+        margin: 0 auto;
+        height: 3.8rem;
+        //background-color: chocolate;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .user{
+            font-size: .2rem;
+            color: @color15;
+        }
+        .comment{
+            font-size: .25rem;
+            color:@color3;
+        }
+        .commentimg{
+            display: flex;
+            justify-content: flex-start;
+            img{
+                width: 1.55rem;
+                height: 1.51rem;
+                margin-left: .1rem;
+            }
+        }
+        .time{
+            font-size: .22rem;
+            color:@color16;
+        }
+    }
+
+    .conclude{
+        width: calc(100% - 23px*2);
+        max-width: 750px;
+        margin: 0 auto;
+        height: 1rem; 
+        display: flex;
+        align-items: center;
+        border-top: 1px solid @color9;
+        span{
+            font-size: .23rem;
+            color:@color16;
+        }
+    }
+
+
 
 }
 
