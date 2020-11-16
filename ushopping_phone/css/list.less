@@ -5,6 +5,11 @@
 @color4: #363636;
 @color5: #e5383c;
 @color6: #9a9a9a;
+
+@color8:#ebebeb;
+@color9:#878787;
+@color10:#8a8a8a;
+@color11:#ef6b16;
 .wrap{
     width: calc(100% - 30px*2);
     height: .9rem;
@@ -91,8 +96,11 @@
                     flex-direction: column;
                     justify-content: space-between;
                     h3{
-                        font-size: .25rem;
+                        font: .25rem/.38rem "微软雅黑";
                         color:@color4;
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                     .price{
                         b{
@@ -108,6 +116,37 @@
                 }
 
             }
+        }
+    }
+}
+
+.tabnav{
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 750px;
+    height: 1.4rem;
+    border-top: 1px solid @color8;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a{
+        text-align: center;
+        i{
+            display: block;
+            font-size: .5rem;
+            color:@color10;
+        }
+        em{
+            font:.2rem/.32rem "微软雅黑";
+            color:@color9;
+        }
+        &:hover i,
+        &:hover em{
+            color:@color11;
         }
     }
 }
