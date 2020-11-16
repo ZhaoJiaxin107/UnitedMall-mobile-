@@ -50,6 +50,7 @@ body {
 }
 .wrap nav .list li a {
   display: inline-block;
+  box-sizing: border-box;
   font: bold 0.28rem/0.71rem "微软雅黑";
   color: #494949;
 }
@@ -108,6 +109,7 @@ body {
   line-height: 0.8rem;
   border: 1px solid #ebebeb;
   text-align: center;
+  box-sizing: border-box;
 }
 .wrap .cosmeticnav li:hover {
   background-color: #f26b11;
