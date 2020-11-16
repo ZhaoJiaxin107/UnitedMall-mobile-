@@ -1,11 +1,15 @@
 @charset "utf-8";
 @color1: #f26b11;
 @color2: #f0f1f3;
+@color3: #d1d1d1;
+@color4: #363636;
+@color5: #e5383c;
+@color6: #9a9a9a;
 .wrap{
     width: calc(100% - 30px*2);
     height: .9rem;
     margin: 0 auto;
-    max-width: 750p;
+    max-width: 750px;
     header{
         width: 100%;
         height: 100%;
@@ -28,7 +32,6 @@
     .searchnav{
         width: 100%;
         height: 1.2rem;
-        background-color: yellowgreen;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -56,6 +59,54 @@
             input::-webkit-input-placeholder{
                 font-size: .27rem;
                 color:@color2;
+            }
+        }
+    }
+    .listpanel{
+        .listitem{
+            width: 100%;
+            height: 2.05rem;
+            border-bottom: 1px solid @color3;
+            display: flex;
+            .leftimg{
+                width: 22.5%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 1.55rem;
+                    height: 1.56rem;
+                }
+            }
+            .rightdesc{
+                width: calc(100% - 22.5%);
+                height: 100%;
+                display: flex;
+                align-items: center;
+                .content{
+                    width: calc(100% - .42rem);
+                    height: 1.56rem;
+                    padding-left: .42rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h3{
+                        font-size: .25rem;
+                        color:@color4;
+                    }
+                    .price{
+                        b{
+                            font-size: .2rem;
+                        }
+                        font-size: .27rem;
+                        color:@color5;
+                    }
+                    .comment{
+                        font-size: .23rem;
+                        color:@color6;
+                    }
+                }
+
             }
         }
     }

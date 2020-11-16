@@ -3,7 +3,7 @@
   width: calc(100% - 30px*2);
   height: 0.9rem;
   margin: 0 auto;
-  max-width: 750p;
+  max-width: 750px;
 }
 .wrap header {
   width: 100%;
@@ -26,7 +26,6 @@
 .wrap .searchnav {
   width: 100%;
   height: 1.2rem;
-  background-color: yellowgreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,4 +54,49 @@
 .wrap .searchnav .search input::-webkit-input-placeholder {
   font-size: 0.27rem;
   color: #f0f1f3;
+}
+.wrap .listpanel .listitem {
+  width: 100%;
+  height: 2.05rem;
+  border-bottom: 1px solid #d1d1d1;
+  display: flex;
+}
+.wrap .listpanel .listitem .leftimg {
+  width: 22.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.wrap .listpanel .listitem .leftimg img {
+  width: 1.55rem;
+  height: 1.56rem;
+}
+.wrap .listpanel .listitem .rightdesc {
+  width: calc(100% - 22.5%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.wrap .listpanel .listitem .rightdesc .content {
+  width: calc(100% - 0.42rem);
+  height: 1.56rem;
+  padding-left: 0.42rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrap .listpanel .listitem .rightdesc .content h3 {
+  font-size: 0.25rem;
+  color: #363636;
+}
+.wrap .listpanel .listitem .rightdesc .content .price {
+  font-size: 0.27rem;
+  color: #e5383c;
+}
+.wrap .listpanel .listitem .rightdesc .content .price b {
+  font-size: 0.2rem;
+}
+.wrap .listpanel .listitem .rightdesc .content .comment {
+  font-size: 0.23rem;
+  color: #9a9a9a;
 }
