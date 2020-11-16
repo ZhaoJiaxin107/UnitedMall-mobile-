@@ -4,6 +4,7 @@
 @color3:#ebebeb;
 @color4:#666666;
 @color5:#464646;
+@color6:#878787;
 .wrap{
     //width: 6.9rem;
     width: calc(100% - 30px*2);
@@ -44,7 +45,7 @@ main{
         border-right: 1px solid @color3;
         .leftnav{
             width: 100%;
-            height: 10.40rem;
+            height: 9.95rem;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -71,16 +72,62 @@ main{
     }
     .rightlist{
         width: 88%;
-        height: 10.40rem;
-        background-color: brown;
+        height: 9.95rem;
+        
         .washhair{
             width: 100%;
-            height: 6.75rem;
-            background-color: chartreuse;
+            height: 6.65rem;
             .title{
                 width: calc(100% - 50px*2);
                 margin: 0 auto;
-                padding-top:.5rem;
+                padding:.5rem 0 .2rem 0;
+                display: flex;
+                justify-content: space-between;
+                h3{
+                    font-size: .27rem;
+                    color: #464646;
+                }
+                .more{
+                    font-size: .25rem;
+                    color:@color4;
+                }
+            }
+            .list{
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+                li{
+                    width: 33.3%;
+                    height: 2rem;
+                    padding-top:.3rem;
+                    a{
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        img{
+                            display: block;
+                            width: 1.51rem;
+                            height: 1.51rem;
+                        }
+                        span{
+                            font-size: .25rem;
+                            color:@color6;
+
+                        }
+                    }
+                }
+            }
+        }
+        .dryhair{
+            width: 100%;
+            height: 3.3rem;
+            background-color: brown;
+            .title{
+                width: calc(100% - 50px*2);
+                margin: 0 auto;
+                padding:.5rem 0;
                 display: flex;
                 justify-content: space-between;
                 h3{
