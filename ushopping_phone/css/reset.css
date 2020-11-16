@@ -29,6 +29,7 @@ input{
 }
 button{
     border: none;
+    outline: none;
 }
 textarea{
     resize: none;
