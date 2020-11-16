@@ -102,6 +102,7 @@ body {
   height: 0.7rem;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 .wrap .cosmeticnav li {
   width: 25%;
@@ -109,7 +110,6 @@ body {
   line-height: 0.8rem;
   border: 1px solid #ebebeb;
   text-align: center;
-  box-sizing: border-box;
 }
 .wrap .cosmeticnav li:hover {
   background-color: #f26b11;
