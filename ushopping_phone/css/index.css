@@ -13,6 +13,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.wrap header a > img {
+  width: 1.5rem;
+  height: 0.29rem;
+}
 .wrap header form input {
   width: 3.06rem;
   height: 0.4rem;

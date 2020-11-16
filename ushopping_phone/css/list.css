@@ -1,0 +1,26 @@
+@charset "utf-8";
+.wrap {
+  width: calc(100% - 30px*2);
+  height: 0.9rem;
+  margin: 0 auto;
+  max-width: 750p;
+}
+.wrap header {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap header .leftarrow {
+  width: 0.15rem;
+  height: 0.32rem;
+}
+.wrap header .logo {
+  width: 1.5rem;
+  height: 0.29rem;
+}
+.wrap header i {
+  font-size: 0.55rem;
+}
