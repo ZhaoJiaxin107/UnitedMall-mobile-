@@ -5,15 +5,18 @@
 @color4:#666666;
 @color5:#464646;
 @color6:#878787;
+.headerbg{
+    background-color: @color1;
+}
 .wrap{
-    //width: 6.9rem;
-    width: calc(100% - 30px*2);
+    width: 100%;
     max-width: 750px;
     margin: 0 auto;
     header{
-       width: 100%;
+       width: calc(100% - 30px*2);
        height: .95rem; 
-       background-color:@color1;
+       margin: 0 auto;
+       //background-color:@color1;
        display: flex;
        align-items: center;
        justify-content: space-between;
@@ -45,7 +48,7 @@ main{
         border-right: 1px solid @color3;
         .leftnav{
             width: 100%;
-            height: 9.95rem;
+            height: 10.40rem;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -72,11 +75,10 @@ main{
     }
     .rightlist{
         width: 88%;
-        height: 9.95rem;
-        
+        height: 10.40rem;
         .washhair{
             width: 100%;
-            height: 6.65rem;
+            height: 6.15rem;
             .title{
                 width: calc(100% - 50px*2);
                 margin: 0 auto;
@@ -114,7 +116,6 @@ main{
                         span{
                             font-size: .25rem;
                             color:@color6;
-
                         }
                     }
                 }
@@ -122,12 +123,11 @@ main{
         }
         .dryhair{
             width: 100%;
-            height: 3.3rem;
-            background-color: brown;
+            height: 4.25rem;
             .title{
                 width: calc(100% - 50px*2);
                 margin: 0 auto;
-                padding:.5rem 0;
+                padding:.5rem 0 .2rem 0;
                 display: flex;
                 justify-content: space-between;
                 h3{
@@ -137,6 +137,32 @@ main{
                 .more{
                     font-size: .25rem;
                     color:@color4;
+                }
+            }
+            .list{
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+                li{
+                    width: 33.3%;
+                    height: 2rem;
+                    padding-top:.3rem;
+                    a{
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        img{
+                            display: block;
+                            width: 1.51rem;
+                            height: 1.51rem;
+                        }
+                        span{
+                            font-size: .25rem;
+                            color:@color6;
+                        }
+                    }
                 }
             }
         }
