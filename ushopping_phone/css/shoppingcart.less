@@ -16,6 +16,9 @@
 @color14:#8a8a8a;
 @color15:#ef6b16;
 @color16:#ebebeb;
+@color17:#676767;
+@color18:#343434;
+@color19:#a4a4a4;
 
 .headerbg{
     background-color: @color1;
@@ -51,7 +54,6 @@
         width: 100%;
         max-width: 750px;
         height: 9.67rem;
-        background-color:burlywood;
         overflow: hidden;
         li{
             margin-top:.26rem;
@@ -171,11 +173,69 @@
         }
     }
 }
+.check{
+    width: 100%;
+    height: 1.2rem;
+    max-width: 750px;
+    border-top: 1px solid @color16;
+    position: fixed;
+    bottom: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    .sumup{
+        width: 66.67%;
+        height: 100%;
+        background-color: @color11;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .selectall{
+            font-size: .22rem;
+            color:@color17;
+            line-height: .35rem;
+        }
+        .selectall .select{
+            display: inline-block;
+            width: .35rem;
+            height: .35rem;
+            border-radius: 50%;
+            border: 1px solid @color4;
+            text-align: center;
+            margin-right: .15rem;
+            img{
+                width: .17rem;
+                height: .13rem;
+                margin-top: .1rem;
+            }
+        }
+        .price{
+            font: .3rem/.47rem "微软雅黑";
+            color: @color18;
+            letter-spacing: .01rem;
+            strong{
+                color:@color7;
+            }
+            span{
+                font-size: .2rem;
+                color:@color19;
+            }
+        }
+    }
+    .checkout{
+        width: 33.33%;
+        height: 100%;
+        background-color: @color1;
+        color:@color11;
+        font-size: .3rem;
+    }
+}
+
 .tabnav{
     background-color: #ffffff;
     width: 100%;
     max-width: 750px;
-    height: 1.4rem;
+    height: 1.2rem;
     border-top: 1px solid @color16;
     position: fixed;
     bottom: 0;
