@@ -400,7 +400,7 @@ body {
   font: 0.2rem/0.32rem "微软雅黑";
   color: #878787;
 }
-.tabnav a:hover i,
-.tabnav a:hover em {
+.tabnav a:nth-of-type(1) i,
+.tabnav a:nth-of-type(1) em {
   color: #ef6b16;
 }
