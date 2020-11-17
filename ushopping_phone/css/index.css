@@ -136,6 +136,10 @@ body {
   display: flex;
   margin-bottom: 0.34rem;
 }
+.wrap .cosmeticlist .cosmetic:hover .cosmeticdesc h3 {
+  color: #ef6b16;
+  text-decoration: underline;
+}
 .wrap .cosmeticlist .cosmetic .cosmeticimg {
   width: 50%;
   height: 100%;
@@ -183,6 +187,7 @@ body {
   background-color: #f26b11;
   color: #f1f1f1;
   font-size: 0.23rem;
+  cursor: pointer;
 }
 .banner {
   margin: 0 auto;
