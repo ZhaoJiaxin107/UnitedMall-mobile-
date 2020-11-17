@@ -12,6 +12,10 @@
 @color10: #515151;
 @color11:#ffffff;
 @color12:#e43a3d;
+@color13:#878787;
+@color14:#8a8a8a;
+@color15:#ef6b16;
+@color16:#ebebeb;
 
 .headerbg{
     background-color: @color1;
@@ -165,5 +169,35 @@
             }
 
         }
+    }
+}
+.tabnav{
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 750px;
+    height: 1.4rem;
+    border-top: 1px solid @color16;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a{
+        text-align: center;
+        i{
+            display: block;
+            font-size: .5rem;
+            color:@color14;
+        }
+        em{
+            font:.2rem/.32rem "微软雅黑";
+            color:@color13;
+        }
+    }
+    a:nth-of-type(2) i,
+    a:nth-of-type(2) em{
+        color:@color15;
     }
 }
