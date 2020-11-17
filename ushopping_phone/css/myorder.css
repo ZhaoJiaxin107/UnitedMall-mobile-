@@ -75,7 +75,6 @@
   max-width: 750px;
   height: 1.4rem;
   margin: 0 auto;
-  background-color: chartreuse;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -94,7 +93,54 @@
   width: 100%;
   height: 0.2rem;
   background-color: #f1f1f1;
-  border: 1px solid;
+}
+main {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  height: 8.36rem;
+}
+main .personalmanagement {
+  width: 100%;
+}
+main .personalmanagement li {
+  width: 100%;
+  height: 1.16rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+main .personalmanagement li .wrapmanage {
+  width: calc(100% - 23px*2);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .personalmanagement li .wrapmanage .management {
+  display: flex;
+  align-items: center;
+}
+main .personalmanagement li .wrapmanage .management img {
+  width: 0.36rem;
+  height: 0.4rem;
+}
+main .personalmanagement li .wrapmanage .management h3 {
+  color: #5e5e5e;
+  font-size: 0.25rem;
+  margin-left: 0.25rem;
+}
+main .personalmanagement li .wrapmanage .rightarrow {
+  display: flex;
+  align-items: center;
+}
+main .personalmanagement li .wrapmanage .rightarrow img {
+  width: 0.19rem;
+  height: 0.26rem;
+}
+main .personalmanagement li:nth-of-type(2) .wrapmanage .rightarrow .extra {
+  font-size: 0.2rem;
+  color: #f26b11;
+  padding-right: 0.44rem;
 }
 .tabnav {
   background-color: #ffffff;

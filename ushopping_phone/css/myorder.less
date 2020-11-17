@@ -7,6 +7,8 @@
 @color5: #251404;
 @color6: #616161;
 @color7: #f1f1f1;
+@color8: #d9d9d9;
+@color9: #5e5e5e;
 @color13: #878787;
 @color14:#8a8a8a;
 @color15:#ef6b16;
@@ -89,7 +91,6 @@
         max-width: 750px;
         height: 1.4rem;
         margin: 0 auto;
-        background-color: chartreuse;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -111,7 +112,54 @@
         width: 100%;
         height: .2rem;
         background-color: @color7;
-        border: 1px solid 
+    }
+}
+main{
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    height: 8.36rem;
+    .personalmanagement{
+        width: 100%;
+        li{
+            width: 100%;
+            height: 1.16rem;
+            border-bottom: 1px solid @color8;
+            .wrapmanage{
+                width: calc(100% - 23px*2);
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .management{       
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: .36rem;
+                        height: .4rem;
+                    }
+                    h3{
+                        color:@color9;
+                        font-size: .25rem;
+                        margin-left: .25rem;
+                    }
+                }
+                .rightarrow{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: .19rem;
+                        height: .26rem;
+                    }
+                }
+            }                 
+        }
+        li:nth-of-type(2) .wrapmanage .rightarrow .extra{
+            font-size: .2rem;
+            color:@color1;
+            padding-right: .44rem;
+        }
     }
 }
 .tabnav{
