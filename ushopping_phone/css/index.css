@@ -80,7 +80,7 @@ body {
 }
 .wrap .sectionnav {
   width: 100%;
-  max-width: 7.5rem;
+  max-width: 750px;
   height: 1.8rem;
   display: flex;
   align-items: center;

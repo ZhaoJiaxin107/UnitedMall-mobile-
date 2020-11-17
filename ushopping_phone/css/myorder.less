@@ -5,6 +5,8 @@
 @color3: #822e02;
 @color4: #ffffff;
 @color5: #251404;
+@color6: #616161;
+@color7: #f1f1f1;
 @color13: #878787;
 @color14:#8a8a8a;
 @color15:#ef6b16;
@@ -80,6 +82,36 @@
                 color: @color1;
             }
         }
+    }
+
+    .sectionnav{
+        width: calc(100% - 23px*2);
+        max-width: 750px;
+        height: 1.4rem;
+        margin: 0 auto;
+        background-color: chartreuse;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        a{
+            img{
+                display: block;
+                width: .34rem;
+                height: .34rem;
+                margin: .16rem;
+            }
+            em{
+                font-size: .2rem;
+                color:@color6;
+            }
+        }
+    }
+
+    .padding{
+        width: 100%;
+        height: .2rem;
+        background-color: @color7;
+        border: 1px solid 
     }
 }
 .tabnav{
