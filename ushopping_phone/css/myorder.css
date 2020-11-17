@@ -27,6 +27,49 @@
   font-size: 0.55rem;
   color: #fefcff;
 }
+.wrap .avatarinfo {
+  width: calc(100% - 30px*2);
+  height: 2.07rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrap .avatarinfo .avatar {
+  display: flex;
+  align-items: center;
+}
+.wrap .avatarinfo .avatar img {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  border: 0.06rem solid #822e02;
+}
+.wrap .avatarinfo .avatar .nameandlevel {
+  margin-left: 0.2rem;
+}
+.wrap .avatarinfo .avatar .nameandlevel .name {
+  font-size: 0.32rem;
+  color: #ffffff;
+}
+.wrap .avatarinfo .avatar .nameandlevel .level {
+  font-size: 0.2rem;
+  color: #251404;
+  font-style: italic;
+  margin-top: 0.22rem;
+}
+.wrap .avatarinfo .sign {
+  width: 1.6rem;
+  height: 0.7rem;
+}
+.wrap .avatarinfo .sign button {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 0.06rem;
+  font-size: 0.25rem;
+  color: #f26b11;
+}
 .tabnav {
   background-color: #ffffff;
   width: 100%;

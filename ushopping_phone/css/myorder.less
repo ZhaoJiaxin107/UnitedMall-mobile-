@@ -1,8 +1,10 @@
 @charset "utf-8";
 
-@color1 :#f26b11;
+@color1: #f26b11;
 @color2: #fefcff;
-
+@color3: #822e02;
+@color4: #ffffff;
+@color5: #251404;
 @color13: #878787;
 @color14:#8a8a8a;
 @color15:#ef6b16;
@@ -35,6 +37,49 @@
            font-size: .55rem;
            color:@color2;
        }
+    }
+    .avatarinfo{
+       width: calc(100% - 30px*2);
+       height: 2.07rem; 
+       margin: 0 auto; 
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       .avatar{
+        display: flex;
+        align-items: center;
+       }
+       .avatar img{
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 50%;
+            border: .06rem solid @color3;
+        }
+        .avatar .nameandlevel{
+            margin-left: .2rem;
+        }
+        .avatar .nameandlevel .name{
+            font-size: .32rem;
+            color:@color4;
+        }
+        .avatar .nameandlevel .level{
+            font-size: .2rem;
+            color:@color5;
+            font-style: italic;
+            margin-top: .22rem;
+        }
+        .sign{
+            width: 1.6rem;
+            height: .7rem;
+            button{
+                width: 100%;
+                height: 100%;
+                background-color: @color4;
+                border-radius: .06rem;
+                font-size: .25rem;
+                color: @color1;
+            }
+        }
     }
 }
 .tabnav{
