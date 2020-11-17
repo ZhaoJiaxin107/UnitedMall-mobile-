@@ -223,6 +223,32 @@
 .wrap .productfee .rightamount {
   color: #e4263f;
 }
+.wrap .amountpurchase {
+  width: calc(100% - 23px*2);
+  margin: 0 auto;
+  height: 1.33rem;
+  font-size: 0.36rem;
+  color: #5a5a5a;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wrap .amountpurchase em {
+  color: #e4263f;
+}
+.wrap .submit {
+  width: 3.57rem;
+  height: 1.33rem;
+  margin: 0 auto;
+}
+.wrap .submit button {
+  width: 100%;
+  height: 100%;
+  background-color: #f26b11;
+  font-size: 0.33rem;
+  color: #ffffff;
+  border-radius: 0.06rem;
+}
 .padding {
   width: 100%;
   max-width: 750px;
