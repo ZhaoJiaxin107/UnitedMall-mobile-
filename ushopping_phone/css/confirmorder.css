@@ -249,6 +249,12 @@
   color: #ffffff;
   border-radius: 0.06rem;
 }
+.wrap .add {
+  width: 100%;
+  max-width: 750px;
+  height: 1.2rem;
+  margin: 0 auto;
+}
 .padding {
   width: 100%;
   max-width: 750px;
