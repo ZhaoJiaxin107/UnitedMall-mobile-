@@ -17,6 +17,7 @@
 @color15:#ef6b16;
 @color16:#ebebeb;
 @color17: #999999;
+@color18: #e4263f;
 
 .headerbg{
     background-color: @color1;
@@ -235,6 +236,26 @@
         }
         
     }
+
+    .productfee{
+        width: calc(100% - 23px*2);
+        margin: 0 auto;
+        height: 2.6rem;
+        display: flex;
+        font: .23rem/.46rem "微软雅黑";
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid @color5;
+        .leftitem{
+            color: @color6;
+        }
+        .rightamount{
+            color:@color18;
+        }
+
+    }
+
+    
 }
 
 .padding{

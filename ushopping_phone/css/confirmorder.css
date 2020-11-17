@@ -207,6 +207,22 @@
 .wrap .credituse .credit span em {
   color: #d94c52;
 }
+.wrap .productfee {
+  width: calc(100% - 23px*2);
+  margin: 0 auto;
+  height: 2.6rem;
+  display: flex;
+  font: 0.23rem/0.46rem "微软雅黑";
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+}
+.wrap .productfee .leftitem {
+  color: #5a5a5a;
+}
+.wrap .productfee .rightamount {
+  color: #e4263f;
+}
 .padding {
   width: 100%;
   max-width: 750px;
