@@ -27,6 +27,194 @@
   font-size: 0.55rem;
   color: #fefcff;
 }
+.wrap .address {
+  width: calc(100% - 30px*2);
+  margin: 0 auto;
+  height: 1.5rem;
+  display: flex;
+}
+.wrap .address .information {
+  flex-basis: 87%;
+  height: 100%;
+  color: #727272;
+  font-size: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrap .address .information .receiver {
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .address .information .receiveaddress {
+  display: flex;
+  justify-content: flex-start;
+}
+.wrap .address .information .receiveaddress h3 {
+  width: 1.5rem;
+}
+.wrap .address .information .receiveaddress p {
+  line-height: 0.3rem;
+}
+.wrap .address .rightarrow {
+  flex-basis: 13%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wrap .address .rightarrow img {
+  width: 0.19rem;
+  height: 0.26rem;
+}
+.wrap .productinfoandprice {
+  width: calc(100% - 23px*2);
+  margin: 0 auto;
+  height: 1.5rem;
+  display: flex;
+}
+.wrap .productinfoandprice .productinfo {
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrap .productinfoandprice .productinfo img {
+  width: 1.08rem;
+  height: 1.1rem;
+}
+.wrap .productinfoandprice .productinfo .desc {
+  height: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrap .productinfoandprice .productinfo .desc > h3 {
+  font-size: 0.23rem;
+  color: #5a5a5a;
+}
+.wrap .productinfoandprice .productinfo .desc > h4 {
+  font-size: 0.23rem;
+  color: #b3b3b3;
+}
+.wrap .productinfoandprice .price {
+  flex-basis: 50%;
+  height: 100%;
+  color: #d94c52;
+  font-size: 0.3rem;
+}
+.wrap .productinfoandprice .price h3 {
+  margin: 0.4rem 0 0 2.15rem;
+}
+.wrap .productinfoandprice .price h3 b {
+  font-size: 0.2rem;
+}
+.wrap .purchasenumber {
+  width: calc(100% - 23px*2);
+  margin: 0 auto;
+  height: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+}
+.wrap .purchasenumber h3 {
+  font-size: 0.23rem;
+  color: #5a5a5a;
+}
+.wrap .purchasenumber .number i,
+.wrap .purchasenumber .number input {
+  display: inline-block;
+  height: 0.65rem;
+  line-height: 0.65rem;
+  text-align: center;
+  border: 1px solid #515151;
+  color: #323232;
+}
+.wrap .purchasenumber .number i {
+  width: 0.75rem;
+  font-size: 0.15rem;
+  border-radius: 0.06rem;
+}
+.wrap .purchasenumber .number input {
+  width: 1.2rem;
+  vertical-align: top;
+  border-radius: 0.06rem;
+  font-size: 0.25rem;
+  box-sizing: content-box;
+}
+.wrap .deliverymethod {
+  width: calc(100% - 23px*2);
+  margin: 0 auto;
+  height: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+}
+.wrap .deliverymethod h3 {
+  font-size: 0.23rem;
+  color: #5a5a5a;
+}
+.wrap .credituse {
+  width: calc(100% - 23px*2);
+  margin: 0 auto;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #efefef;
+}
+.wrap .credituse h3 {
+  font-size: 0.23rem;
+  color: #5a5a5a;
+}
+.wrap .credituse .credit {
+  display: flex;
+}
+.wrap .credituse .credit input {
+  box-sizing: border-box;
+  width: 1.54rem;
+  height: 0.74rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.06rem;
+  text-align: center;
+}
+.wrap .credituse .credit input::-webkit-input-placeholder {
+  font-size: 0.22rem;
+  color: #ebebeb;
+}
+.wrap .credituse .credit button {
+  width: 0.73rem;
+  height: 0.74rem;
+  outline: #FAA42F;
+  background-color: #f26b11;
+  box-sizing: border-box;
+  font-size: 0.25rem;
+  color: #ffffff;
+  border-radius: 0.06rem;
+  margin-left: 0.1rem;
+}
+.wrap .credituse .credit span {
+  display: inline-block;
+  font-size: 0.24rem;
+  color: #999999;
+  height: 0.74rem;
+  line-height: 0.74rem;
+  margin: 0 0 0 0.2rem;
+}
+.wrap .credituse .credit span em {
+  color: #d94c52;
+}
+.padding {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  height: 0.1rem;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #efefef;
+}
 .tabnav {
   background-color: #ffffff;
   width: 100%;
