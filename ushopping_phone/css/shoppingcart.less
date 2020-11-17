@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+@color1:#f26b11;
+@color2: #fefcff;
+@color3: #f8f8f8;
+@color4:#b02818;
+@color5:#333333;
+@color6: #656565;
+@color7:#e5383c;
+@color8:#323232;
+@color9:#cacaca;
+@color10: #515151;
+@color11:#ffffff;
+@color12:#e43a3d;
+
+.headerbg{
+    background-color: @color1;
+}
+.wrap{
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    header{
+       width: calc(100% - 30px*2);
+       height: .9rem; 
+       margin: 0 auto;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       a{
+           img{
+               width: .17rem;
+               height: .28rem;
+           }
+       }
+       h3{
+           font:.35rem/1 "微软雅黑";
+           color:@color2;
+       }
+       i{
+           font-size: .55rem;
+           color:@color2;
+       }
+    }
+
+    .shoppinglist{
+        width: 100%;
+        max-width: 750px;
+        height: 9.67rem;
+        background-color:burlywood;
+        overflow: hidden;
+        li{
+            margin-top:.26rem;
+            width: 100%;
+            max-width: 750px;
+            height: 1.75rem;
+            box-shadow: 0 0 .1rem @color3;
+            display: flex;
+            .leftproduct{
+                flex-basis: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                .select{
+                    width: .35rem;
+                    height: .35rem;
+                    border-radius: 50%;
+                    border: 1px solid @color4;
+                    text-align: center;
+                    img{
+                        width: .17rem;
+                        height: .13rem;
+                        margin-top: .1rem;
+                    }
+                }
+                .item{
+                    width: 1.08rem;
+                    height: 1.1rem;
+                }
+                .desc{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    h3{
+                        font-size: .25rem;
+                        color:@color5;
+
+                    }
+                    .size{
+                        font-size: .22rem;
+                        color:@color6;
+
+                    }
+                    .price{
+                        color:@color7;
+                        font-size: .23rem;
+                    }
+                }
+
+            }
+            .rightnum{
+                flex-basis: 50%;
+                height: 100%;
+                .number{
+                    margin: .9rem 0 0 1.35rem;
+                }
+                .number i,
+                .number input{
+                    display: inline-block;
+                    height: .6rem;
+                    line-height: .6rem;
+                    font-size: .2rem;
+                    text-align: center;
+                    border: 1px solid @color10;
+                    color:@color8;       
+                }
+                .number i{
+                    width: .6rem;
+                }
+                .number input{
+                    width: .8rem;
+                    vertical-align: top;
+                    margin-left: -.08rem;
+                    border-left-style: none;
+                }
+                .number .minus{
+                    border-radius: .06rem 0 0 .06rem;
+                }
+                .number .plus{
+                    margin-left: -.08rem;
+                    border-radius: 0 0.06rem 0.06rem 0;
+                    border-left-style: none;
+                }
+
+            }
+        }
+        li:nth-of-type(3){
+            .leftproduct .select{
+                border: 1px solid @color9;
+            }
+        }
+        .active{
+            display: flex;
+            .leftproduct{
+                width: 43.3%;
+                height: 100%;
+            }
+            .rightnum{
+                width: 43.3%;
+                height: 100%;
+               .number{
+                    margin: .9rem 0 0 .8rem;
+               }
+            }
+            .delete{
+                width: 13.3%;
+                height: 100%;
+                background-color: @color12;
+                font: .3rem/1.75rem "微软雅黑";
+                text-align: center;
+                color:@color11;
+            }
+
+        }
+    }
+}

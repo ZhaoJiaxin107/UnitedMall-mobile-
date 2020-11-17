@@ -101,14 +101,12 @@
 }
 .wrap .purchase .purchasenumber .number input {
   width: 0.8rem;
-}
-.wrap .purchase .purchasenumber .number .minus {
-  border-radius: 0.06rem 0 0 0.06rem;
-}
-.wrap .purchase .purchasenumber .number input {
   vertical-align: top;
   margin-left: -0.08rem;
   border-left-style: none;
+}
+.wrap .purchase .purchasenumber .number .minus {
+  border-radius: 0.06rem 0 0 0.06rem;
 }
 .wrap .purchase .purchasenumber .number .plus {
   margin-left: -0.08rem;
