@@ -74,7 +74,7 @@
   border-radius: 0.04rem;
   margin: 0 0.15rem;
 }
-.wrap .purchase .promotion i {
+.wrap .purchase .promotion a > i {
   font-size: 0.26rem;
   color: #b4b4b4;
 }
@@ -120,7 +120,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.wrap .purchase .property i {
+.wrap .purchase .property a > i {
   font-size: 0.26rem;
   color: #b4b4b4;
 }
@@ -143,6 +143,7 @@
   color: #ffffff;
   border-radius: 0.05rem;
   border: none;
+  cursor: pointer;
 }
 .wrap .purchase .size button:hover {
   background-color: #e43a3d;
@@ -288,7 +289,9 @@
 }
 .tabnav .addshoppingcart button {
   background-color: #f26b11;
+  cursor: pointer;
 }
 .tabnav .purchaseatonce button {
   background-color: #e43a3d;
+  cursor: pointer;
 }
