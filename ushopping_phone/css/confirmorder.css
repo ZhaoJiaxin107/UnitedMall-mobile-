@@ -1,0 +1,59 @@
+@charset "utf-8";
+.headerbg {
+  background-color: #f26b11;
+}
+.wrap {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.wrap header {
+  width: calc(100% - 30px*2);
+  height: 0.9rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrap header a img {
+  width: 0.17rem;
+  height: 0.28rem;
+}
+.wrap header h3 {
+  font: 0.35rem/1 "微软雅黑";
+  color: #fefcff;
+}
+.wrap header i {
+  font-size: 0.55rem;
+  color: #fefcff;
+}
+.tabnav {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 750px;
+  height: 1.2rem;
+  border-top: 1px solid #ebebeb;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.tabnav a {
+  text-align: center;
+}
+.tabnav a i {
+  display: block;
+  font-size: 0.5rem;
+  color: #8a8a8a;
+}
+.tabnav a em {
+  font: 0.2rem/0.32rem "微软雅黑";
+  color: #878787;
+}
+.tabnav a:nth-of-type(2) i,
+.tabnav a:nth-of-type(2) em {
+  color: #ef6b16;
+}
