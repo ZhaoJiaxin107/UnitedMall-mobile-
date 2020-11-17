@@ -26,3 +26,14 @@ HTML element.
 
 3) Convert 1rem value under different device sizes, that is, change font-size of HTML under different sizes. CSS media query customization and 
 JS dynamic calculation control are commonly used in coversion.
+
+****Combination****
+* index.html<br>
+* classification.html<br>
+* list.html<br>
+* detail.html<br>
+* shoppingcart.html<br>
+* confirmorder.html<br>
+* myorder.html
+
+
