@@ -69,6 +69,7 @@
   border-radius: 0.06rem;
   font-size: 0.25rem;
   color: #f26b11;
+  cursor: pointer;
 }
 .wrap .sectionnav {
   width: calc(100% - 23px*2);
