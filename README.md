@@ -28,12 +28,12 @@ HTML element.
 JS dynamic calculation control are commonly used in coversion.
 
 ****Combination****
-* index.html<br>
-* classification.html<br>
-* list.html<br>
-* detail.html<br>
-* shoppingcart.html<br>
-* confirmorder.html<br>
-* myorder.html
+* index page<br>
+* classification page<br>
+* list page<br>
+* detail page<br>
+* shoppingcart page<br>
+* confirmorder page<br>
+* myorder page
 
 
